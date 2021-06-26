@@ -34,7 +34,8 @@
     "nunjucks": "^3.2.3",
     "path-to-regexp": "^6.2.0",
     "pkg-dir": "^5.0.0",
-    "toformat": "^2.0.0"
+    "toformat": "^2.0.0",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
