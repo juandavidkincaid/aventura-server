@@ -1,2 +1,2 @@
 export {AventuraConfig} from './config';
-export {Aventura} from './aventura';
+export {Aventura, AventuraConfigThunk} from './aventura';

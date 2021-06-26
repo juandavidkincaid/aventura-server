@@ -63,8 +63,10 @@ declare global {
     }
 }
 
+type AventuraConfigThunk = DeepPartial<AventuraConfig> | (()=>(DeepPartial<AventuraConfig> | Promise<DeepPartial<AventuraConfig>>));
+
 class Aventura {
-    instanceconfig: DeepPartial<AventuraConfig>;
+    instanceconfig: AventuraConfigThunk;
     setup: boolean;
     builtconfig: AventuraConfig | null;
     builtapp: Express | null;
@@ -73,7 +75,7 @@ class Aventura {
     dbconnection: Connection | null;
     middleware: Aventura.Middleware;
 
-    constructor(insconfig: DeepPartial<AventuraConfig>) {
+    constructor(insconfig: AventuraConfigThunk) {
         bindAllMethods(this);
 
         this.instanceconfig = insconfig;
@@ -138,8 +140,14 @@ class Aventura {
         return collectStatic;
     }
 
-    async buildConfig(config: DeepPartial<AventuraConfig>) {
+    async buildConfig(configThunk: AventuraConfigThunk) {
         const baseConfig = await getConfiguration();
+        let config: DeepPartial<AventuraConfig>;
+        if(typeof configThunk === 'function'){
+            config = await configThunk();
+        }else{
+            config = configThunk;
+        }
         return lodash.merge(baseConfig, config) as AventuraConfig;
     }
 
@@ -233,5 +241,6 @@ class Aventura {
 }
 
 export {
-    Aventura
+    Aventura,
+    AventuraConfigThunk
 }
