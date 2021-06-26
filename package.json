@@ -11,6 +11,7 @@
     "dev": "TS_NODE_PROJECT=\"webpack.tsconfig.json\" NODE_ENV=development webpack-cli --mode development --config dev.webpack.config.ts  --progress",
     "dev.profile": "TS_NODE_PROJECT=\"webpack.tsconfig.json\" NODE_ENV=development webpack --mode development --config dev.webpack.config.ts  --profile --json > ./profiles/build-dev.json",
     "dev.analyze": "TS_NODE_PROJECT=\"webpack.tsconfig.json\" NODE_ENV=development ANALYZE_BUNDLE=yes webpack --mode development --config dev.webpack.config.ts ",
+    "start": "nodemon --config nodemon.json --inspect --trace-warnings --trace-uncaught ./dist/server.js",
     "test": "jest --runInBand"
   },
   "files": [
@@ -49,6 +50,7 @@
     "jest": "^27.0.5",
     "moment-locales-webpack-plugin": "^1.2.0",
     "mongodb-memory-server": "^6.9.6",
+    "nodemon": "^2.0.7",
     "source-map-loader": "^3.0.0",
     "thread-loader": "^3.0.4",
     "ts-essentials": "^7.0.2",
