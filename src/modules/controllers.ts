@@ -4,10 +4,12 @@ import { Aventura, AventuraConfig } from '@aventura-core';
 
 import * as staticCore from '@aventura-core/static';
 
+import * as market from './market';
 import * as head from './head';
 
 const routes = [
     staticCore.startRoutes,
+    market.startRoutes,
     head.startRoutes
 ];
 
