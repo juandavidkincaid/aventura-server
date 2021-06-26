@@ -1,0 +1,1 @@
+declare var PKG_VRS: string;

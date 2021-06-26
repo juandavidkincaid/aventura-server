@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ logoPath }}"/>
+    <title>Mr.Pink</title>
+</head>
+<body>
+    <noscript>You Must Enable JS for executing Aventura</noscript>
+    <div id="App"></div>
+    <script id="adat" nonce="{{ appdatab64nonce }}">
+      window.adat = '{{ appdatab64 }}';
+    </script>
+    <script src="{{ scriptPath }}"></script>
+</body>
+</html>

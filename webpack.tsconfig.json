@@ -1,0 +1,17 @@
+{
+    "include": [
+        "./declarations/**/*"
+    ],
+    "exclude": [
+        "./node_modules/**/*"
+    ],
+    "compilerOptions": {
+        "jsx": "react",
+        "strict": true,
+        "target": "esnext",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    }
+}

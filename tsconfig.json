@@ -1,0 +1,67 @@
+{
+    "include": [
+        "./declarations/**/*",
+        "./tests/**/*"
+    ],
+    "exclude": [
+        "./node_modules/**/*"
+    ],
+    "files": [
+        "./src/server.ts"
+    ],
+    "compilerOptions": {
+        "jsx": "preserve",
+        "strict": true,
+        "noImplicitAny": false,
+        "target": "ES2020",
+        "module": "ES2020",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "paths": {
+            "@aventura-src": [
+                "./src/"
+            ],
+            "@aventura-src/*": [
+                "./src/*"
+            ],
+            "@aventura-core": [
+                "./src/core/"
+            ],
+            "@aventura-core/*": [
+                "./src/core/*"
+            ],
+            "@aventura-util": [
+                "./src/util/"
+            ],
+            "@aventura-util/*": [
+                "./src/util/*"
+            ],
+            "@aventura-modules": [
+                "./src/modules/"
+            ],
+            "@aventura-modules/*": [
+                "./src/modules/*"
+            ],
+            "@aventura-res": [
+                "./src/res/"
+            ],
+            "@aventura-res/*": [
+                "./src/res/*"
+            ],
+            "momentz": [
+                "./node_modules/moment-timezone/"
+            ],
+            "momentz/*": [
+                "./node_modules/moment-timezone/*"
+            ],
+            "@aventura-tests": [
+                "./tests/"
+            ],
+            "@aventura-tests/*": [
+                "./tests/*"
+            ]
+        }
+    }
+}
