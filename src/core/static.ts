@@ -65,9 +65,7 @@ const collectStatic = async (folderPath: string, createLinks: boolean = true) =>
 }
 
 const startRoutes = async (aventura: Aventura, app: Express, config: AventuraConfig) => {
-    if(process.env.NODE_ENV === 'development' && config.dev){
-        devStatic(aventura, app, config);
-    }
+    devStatic(aventura, app, config);
 }
 
 export {
