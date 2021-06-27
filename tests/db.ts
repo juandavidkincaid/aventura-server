@@ -2,7 +2,7 @@
 import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 
-const mongod = new MongoMemoryServer();
+export const mongod = new MongoMemoryServer();
 
 /**
  * Connect to mock memory db.
