@@ -1,7 +1,7 @@
 {
   "name": "aventura-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "author": "Juan David Kincaid <juandavidkincaid@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
