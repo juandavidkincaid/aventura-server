@@ -29,5 +29,6 @@ export const startRoutes = async (aventura: Aventura, app: Express, config: Aven
 }
 
 export {
+    market,
     head,
 }
