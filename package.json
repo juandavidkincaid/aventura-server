@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Juan David Kincaid <juandavidkincaid@gmail.com>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "scripts": {
     "build": "rm -rf ./dist/* && TS_NODE_PROJECT=\"webpack.tsconfig.json\" NODE_ENV=production webpack --mode production --config prod.webpack.config.ts  --progress",
     "build.profile": "TS_NODE_PROJECT=\"webpack.tsconfig.json\" NODE_ENV=production webpack --mode production --config prod.webpack.config.ts  --profile --json > ./profiles/build-prd.json",
