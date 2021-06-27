@@ -1,3 +1,4 @@
+// Class Method binders
 const getAllProperties = (object: any) => {
 	const properties = new Set<[any, string | symbol]>();
 

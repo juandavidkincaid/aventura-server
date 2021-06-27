@@ -1,4 +1,4 @@
-
+// Common Base64 utils 
 const base64Encode = (tenc: any) => {
     return Buffer.from(tenc).toString('base64');
 }

@@ -6,6 +6,7 @@ import express, { Express } from 'express';
 
 import { Aventura, AventuraConfig } from '.';
 
+// Static Paths to Serve in development or collect in production
 const staticMarkers: { path: string, url: string, condition: (config: AventuraConfig) => boolean }[] = [
     {
         path: 'dist/static/',

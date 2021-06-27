@@ -90,6 +90,8 @@ class Aventura {
         configureEnv();
     }
 
+    // Async Getters
+
     get config() {
         return (async () => {
             if (!this.builtconfig) {

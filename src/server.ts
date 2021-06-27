@@ -5,7 +5,13 @@ import { ObjectId } from 'mongodb';
 import { Aventura, AventuraConfigThunk } from '@aventura-src/core';
 import * as gmodels from '@aventura-modules/models';
 
-// Running
+// Running Code
+// For the purposes of demonstration this snippet is introduced
+// so that the server starts automatically with a default configuration
+// in a production environment the package would sport a ServerClass in
+// this case 'Aventura' and a configuration type 'AventuraConfigThunk'
+// running code would be hosted on a different package as well as the
+// actual deployment configurations
 
 const mongod = new MongoMemoryServer();
 
@@ -58,7 +64,7 @@ const aventura = new Aventura(config);
     }
 })();
 
-// Running
+// Running Code End
 
 export {
     Aventura,

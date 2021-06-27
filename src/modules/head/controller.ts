@@ -39,7 +39,7 @@ class HeadController{
         const clientStats = await fs.readJSON(path.join(root, 'clientdist/clientstats.json'));
         
     
-        const appdata: any/* Dapi.head.v1.AppData */ = {
+        const appdata: any = {
             backendVersion: PKG_VRS,
             backendHash: __webpack_hash__,
             csrf: req.aventura.csrf.token,
